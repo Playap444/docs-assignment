@@ -101,13 +101,14 @@ To get the container name, issue the following command:
 ```shell
 $(kubectl get pods --template '{{range .items}}{{.metadata.name}}{{end}}' --selector=app=web)
 ```
-Note. This name should equal to the name specified in the yaml file 
-
+*Note* This name should equal to the name specified in the yaml file 
+```
 <b> containers:
       - image: gcr.io/google-samples/hello-app:1.0
         name: hello-app
         resources: {}
 </b>
+```
 
 If it matches then run this command:
 
@@ -123,7 +124,7 @@ or
 
 Your name may be different but using " kubectl get pods " will show you which name to grab the correct name.
 
-Save the name to <b> $PODNAME=<yourappname> </b>
+Save the name to <b> $PODNAME environment variable.<yourappname> </b>
 
 -------------------------------------------------------------------------
 
@@ -132,7 +133,6 @@ Now that you have the container name, start the port forwarding with the contain
 Run the following command:
 ```
 $ kubectl port-forward $PODNAME 8080:8080
-
 ```
 The output should be this: 
 
