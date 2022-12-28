@@ -135,9 +135,11 @@ Run the following command:
 $ kubectl port-forward $PODNAME 8080:8080
 ```
 The output should be this: 
+```
 
 Forwarding from 127.0.0.1:8080 -> 8080
 Forwarding from [::1]:8080 -> 8080
+```
 
 If you visit localhost:8080 you will see the Hello World welcome page.
 
