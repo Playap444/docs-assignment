@@ -147,7 +147,7 @@ If you visit localhost:8080 you will see the Hello World welcome page.
 
 # Next Steps
 
-As mentioned before Kubernetes is an orchestration platform used to deploy containerized applications. We hope you now better understand how one can deploy applications to Kubernetes and AWS. 
+As mentioned before Kubernetes is an orchestration platform used to deploy containerized applications. We hope you now better understand how one can deploy applications to Kubernetes using Kind. 
 
 
 
