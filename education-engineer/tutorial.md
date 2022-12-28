@@ -31,11 +31,13 @@ You should check for connectivity with the Kubernete cluster and the Kubernetes 
 
 Running <b>" kubectl get pods -A "</b> will let you list the current pods in your cluster as well as testing connectivity for Kubernetes.
 
+Next, run the following command:
+
 ```
 $ kubectl cluster-info --context kind-kind
 ```
 
-You should see output that contains the control plane IP address and more. 
+The output should contains the control plane IP address and more. 
 
 ## Deploy Application
 
